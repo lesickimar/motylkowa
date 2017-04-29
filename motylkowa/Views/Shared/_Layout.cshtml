@@ -17,6 +17,24 @@
     </environment>
 </head>
 <body>
+    <div id="page" class="container">
+        <section id="Top" class ="col-xs-5 col-md-5">
+            
+            <li><a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/Brand.jpg" width="500" class="img-responsive"></a></li>
+        </section>
+   
+
+    
+        <section class="col-xs-6 col-md-2">
+            <button class="btn btn-default" type="submit" <li><a asp-area="" asp-controller="Home" asp-action="About">O nas</a></li></button>
+            <button class="btn btn-default" type="submit" <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li></button>
+        </section>
+
+        
+    </div>
+        
+    
+    <!--
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -26,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">motylkowa</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Motylkowa Kraina</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -38,11 +56,12 @@
             </div>
         </div>
     </div>
+    -->
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - motylkowa</p>
+            <p>&copy; 2017 - Motylkowa Kraina</p>
         </footer>
     </div>
 
@@ -64,5 +83,6 @@
     </environment>
 
     @RenderSection("scripts", required: false)
+    
 </body>
 </html>
