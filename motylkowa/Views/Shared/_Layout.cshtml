@@ -18,17 +18,42 @@
 </head>
 <body>
     <div id="page" class="container">
-        <section id="Top" class ="col-xs-5 col-md-5">
+        <section id="Top" class ="col-xs-12 col-md-6">
             
             <li><a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/Brand.jpg" width="500" class="img-responsive"></a></li>
         </section>
    
 
-    
-        <section class="col-xs-6 col-md-2">
-            <button class="btn btn-default" type="submit" <li><a asp-area="" asp-controller="Home" asp-action="About">O nas</a></li></button>
-            <button class="btn btn-default" type="submit" <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li></button>
+    <!--
+        <section class="col-xs-8 col-md-5">
+            <button class="btn btn-default buttons" type="submit" <li><a asp-area="" asp-controller="Home" asp-action="About">O nas</a></li></button>
+            <button class="btn btn-default " type="submit" <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li></button>
+            <button class="btn btn-default fixed-bottom" type="submit" <li><a asp-area="" asp-controller="Home" asp-action="Contact">test1</a></li></button>
+            <button class="btn btn-default span3 offset2" type="submit" <li><a asp-area="" asp-controller="Home" asp-action="Contact">test2</a></li></button>
+          
         </section>
+-->
+        <div class="row">
+            <div class="col-xs-2 col-md-2">
+            <a class="btn btn-primary" type="button" role="button" asp-area="" asp-controller="Home" asp-action="About">O nas</a>
+            </div>
+            <div class="col-xs-3 col-md-3">
+            <a class="btn btn-warning" type="button" role="button" asp-area=""  asp-controller="Home" asp-action="Contact">Dla rodziców</a>
+            </div>
+            <div class="col-xs-2 col-md-2">
+            <a class="btn btn-warning" type="button" role="button" asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a>
+            </div>
+            <div class="col-xs-2 col-md-2">
+            <a class="btn btn-info" type="button" role="button" asp-area="" asp-controller="Home" asp-action="Contact">Galeria</a>
+            </div>
+            <div class="col-xs-2 col-md-2">
+            <a class="btn btn-info" type="button" role="button" asp-area="" asp-controller="Home" asp-action="Contact">Cennik</a>
+            </div>
+     
+        
+            
+          
+        </div>
 
         
     </div>
